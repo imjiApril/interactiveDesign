@@ -1,0 +1,27 @@
+*{margin: 0px; padding:0px;}
+
+/* NOTE: perspective */
+
+/*div{width: 200px; height: 200px; margin: 150px 50px;
+  border: 1px solid #000; float:left;}
+div p{ width: 100%; height: 100%; background-color: blue;
+   opacity: 0.3; transform: rotateY(50deg);}*/
+/*div:nth-child(1){perspective: 150px;}
+div:nth-child(2){perspective: 500px;}*/
+
+/* NOTE: translateZ */
+/*div{width: 600px; height: 400px; border: 1px solid #333;
+  margin:100px auto;
+position:relative; perspective: 6000px;}
+
+div p{width: 100%; height: 100%; background: blue;opacity: 0.3;
+position: absolute;top:0px; left: 0px; font: bold 60px arial; color: #fff;}
+
+div P:nth-child(1){transform: translateZ(-500px);}
+div p:nth-child(3){transform: translateZ(500px);}*/
+
+div{width:300px; height: 300px; float:left; margin: 100px;
+border: 1px solid #333; perspective: 700px}
+div p{width: 100%; height: 100%; background: blue; opacity: 0.3;}
+div:nth-child(1) p{transform: rotateX(45deg);}
+div:nth-child(2) p{transform: rotateY(45deg);}

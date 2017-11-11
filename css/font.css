@@ -1,0 +1,11 @@
+*{fadding: 0px; margin: 0px;}
+ul{list-style: none;}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
+p{font-family: 'Source Sans Pro', sans-serif;}
+span{font-size: 50px;font-family: 'Gloria Hallelujah', cursive;}
+ul li{float: left; margin: 20px; color:rgb(8, 8, 7)}
+ul li:first-child .fa{font-size: 20px; color: red;}
+ul li:nth-child(2) .fa{font-size: 20px; color: rgb(60, 235, 217);}

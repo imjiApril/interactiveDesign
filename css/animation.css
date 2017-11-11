@@ -1,0 +1,6 @@
+@keyframes ani {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+div{width: 300px; height: 300px; background:linear-gradient(to right, pink, tomato); margin: 100px;
+animation:ani 2s linear 3 normal;}

@@ -1,0 +1,19 @@
+*{margin: 0; paddng:0;}
+div{width: 300px; height: 300px; margin: 100px auto;
+  border:3px solid rgb(179, 32, 25); box-sizing: border-box;}
+
+/* NOTE:가로폭이 1024x이상일때 */
+@media screen and (min-width: 1024px){
+  div{background-color: rgb(11, 187, 71);}
+}
+
+/* NOTE: 가로폭이 640px 이상이고 1023px 이하일때 */
+@media screen and (min-width: 640px) and (max-width: 1023px){
+  div{background: rgb(177, 235, 229);}
+}
+
+
+/* NOTE: 가로폭이 639px 이하일때 */
+@media screen and (max-width: 639px) {
+  div{background: rgb(238, 163, 244);}
+}
