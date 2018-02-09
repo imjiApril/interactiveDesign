@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <style>
+    p{font-size: 20px; margin: 20px}
+  </style>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var now = new Date();
+      $('p').eq(0).text(now);
+
+      var year = now.getFullYear();
+      $('p').eq(1).text(year);
+
+      var month = now.getMonth();
+      $('p').eq(2).text(month);
+
+      var date = now.getDate();
+      $('p').eq(3).text(date);
+
+      var day = now.getDay();
+      $('p').eq(4).text(day);
+
+      var min = now.getMinutes();
+      $('p').eq(5).text(min);
+
+      var sec = now.getSeconds();
+      $('p').eq(6).text(sec);
+
+      var hour = now.getHours();
+      $('p').eq(7).text(hour);
+
+    })
+  </script>
+  <title>newDate</title>
+</head>
+<body>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+</body>
+</html>

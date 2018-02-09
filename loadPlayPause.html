@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <title>loadPlayPause</title>
+  <style>
+    *{padding:0px; margin: 0px;}
+    li{list-style: none;}
+    .box{width: 800px}
+    .box video{width: 100%}
+    .btnSet li{float:left; margin: 0px 20px; font: bold 18px/2 aral; cursor: pointer;}
+  </style>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var vid = $('video').get(0);
+
+      $('.load').on('click',function(){
+        vid.load();
+      });
+
+      $('.play').on('click',function(){
+        vid.play();
+      })
+
+      $('.pause').on('click',function(){
+        vid.pause();
+      });
+    });
+  </script>
+</head>
+<body>
+<div class="box">
+  <video src="img/video.mp4" type="video/mp4" autoplay poster="posterimage.jpg">
+  </video>
+</div>
+
+<ul class="btnSet">
+  <li class="load">load</li>
+  <li class="play">play</li>
+  <li class="pause">pause</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <style media="screen">
+    *{margin: 0; padding: 0;}
+    p{font: bold 100px arial; margin: 50px auto; text-align: center;}
+  </style>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var ab = setInterval(function(){
+        var now = new Date();
+        ;
+        var hr = now.getHours();
+        var min = now.getMinutes();
+        var sec = now.getSeconds();
+
+        $('span').eq(0).text(hr);
+        $('span').eq(1).text(min);
+        $('span').eq(2).text(sec);
+      },1000);
+    });
+  </script>
+  <title>Document</title>
+</head>
+<body>
+  <p>
+    <span>00</span> :
+    <span>00</span> :
+    <span>00</span>
+  </p>
+</body>
+</html>
